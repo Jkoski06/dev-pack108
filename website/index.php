@@ -92,6 +92,10 @@ div.index_column {
 </style>
 </head>
 <body>
+<div style="padding:12px;margin:12px 0;border:2px dashed #999;">
+  DEV TEST: If you can see this, the dev deploy worked ✅
+</div>
+
 <?php
   make_banner('', /* back_button */ false);
 
