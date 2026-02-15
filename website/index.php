@@ -92,6 +92,9 @@ div.index_column {
 </style>
 </head>
 <body>
+
+<!-- DEV DEPLOY MARKER -->
+<div style="padding:10px;margin:10px;border:2px solid #0a0;">DEV DEPLOY WORKED ✅</div>
 <div style="padding:12px;margin:12px 0;border:2px dashed #999;">
   DEV TEST: If you can see this, the dev deploy worked ✅
 </div>
