@@ -1,0 +1,33 @@
+FROM php:8.2-apache
+
+RUN a2enmod rewrite
+
+WORKDIR /var/www/html
+
+# Web root
+COPY website/ /var/www/html/
+COPY templates/banner.inc /var/www/html/inc/banner.inc
+# Provide the "inc/" directory expected by website/*.php
+# DerbyNet's repo keeps many include fragments under templates/.
+RUN mkdir -p /var/www/html/inc
+COPY templates/ /var/www/html/inc/
+
+# Data directory
+RUN mkdir -p /var/lib/derbynet \
+  && chown -R www-data:www-data /var/www/html /var/lib/derbynet
+
+EXPOSE 80
+FROM php:8.2-apache
+
+# Enable Apache rewrite (often useful)
+RUN a2enmod rewrite
+
+# Copy DerbyNet website into Apache docroot
+WORKDIR /var/www/html
+COPY website/ /var/www/html/
+
+# DerbyNet writes here; we'll mount a volume to this path
+RUN mkdir -p /var/lib/derbynet \
+  && chown -R www-data:www-data /var/www/html /var/lib/derbynet
+
+EXPOSE 80

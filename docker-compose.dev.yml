@@ -1,0 +1,20 @@
+services:
+  derbynet_dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: derbynet_dev
+    ports:
+      - "127.0.0.1:8081:80"
+    environment:
+      - DERBYNET_DATA_DIR=/var/lib/derbynet
+    volumes:
+      - derbynet_dev_data:/var/lib/derbynet
+      - derbynet_dev_local:/var/www/html/local
+      - ./templates/banner.inc:/var/www/html/inc/banner.inc:ro
+    restart: unless-stopped
+
+volumes:
+  derbynet_dev_data:
+  derbynet_dev_local:
+
