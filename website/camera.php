@@ -1,5 +1,8 @@
 <?php @session_start();
 
+require_once('inc/authorize.inc');
+require_permission(SET_UP_PERMISSION);
+
 require_once('inc/banner.inc');
 require_once('inc/data.inc');
 session_write_close();
