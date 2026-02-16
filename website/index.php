@@ -168,6 +168,8 @@ make_spacer_if($need_spacer);
 // *********** Other ***************
 make_link_button('Printables', 'print.php', ASSIGN_RACER_IMAGE_PERMISSION, 'other_button');
 make_link_button('About', 'about.php', -1, 'other_button');
+// add camera access from the main index page
+make_link_button('Be a Camera', 'camera.php', -1, 'other_button');
 
 if (@$_SESSION['role']) {
   make_link_button('Log out', 'login.php?logout', -1, 'other_button');

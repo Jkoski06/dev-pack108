@@ -37,13 +37,6 @@ require_once('inc/locked.inc');
   margin-left: -12.5em;
 }
 
-#camera_button {
-  padding-bottom: 15px;
-  padding-top: 5px;
-  font-size: 22px;
-  height: 20px;
-  width: 150px;
-}
 #kiosk_button {
   margin-bottom: 6px;
 }
@@ -77,7 +70,6 @@ foreach ($roles as $name => $details) {
 
 <div id="login-kiosk">
 <input type="button" id="kiosk_button" value="Be a Kiosk" onclick="show_kiosk_form();"/>
-<a class="button_link" id="camera_button" href="camera.php">Be a Camera</a>
 </div>
 
 <?php
