@@ -93,11 +93,10 @@ div.index_column {
 </head>
 <body>
 
-<!-- DEV DEPLOY MARKER -->
-<div style="padding:10px;margin:10px;border:2px solid #0a0;">DEV DEPLOY WORKED ✅</div>
-<div style="padding:12px;margin:12px 0;border:2px dashed #999;">
-  DEV TEST: If you can see this, the dev deploy worked ✅
+ <div style="background:#ffe58f;padding:12px 16px;font-weight:700;text-align:center;border-bottom:2px solid #caa400;">
+  DEV INSTANCE
 </div>
+
 
 <?php
   make_banner('', /* back_button */ false);
