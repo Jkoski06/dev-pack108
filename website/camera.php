@@ -1,8 +1,5 @@
 <?php @session_start();
-if (empty($_SESSION['USER']) && empty($_SESSION['user']) && empty($_SESSION['username'])) {
-  header('Location: login.php?next=' . urlencode($_SERVER['REQUEST_URI']));
-  exit;
-}
+
 require_once('inc/banner.inc');
 require_once('inc/data.inc');
 session_write_close();
