@@ -68,6 +68,40 @@ div.index_column {
   float: left;
 }
 
+div.live_stream_section {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+div.live_stream_section img.live_stream_image {
+  max-width: 200px;
+  max-height: 200px;
+  margin-bottom: 15px;
+}
+
+p.live_stream_text {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+a.live_stream_link {
+  display: block;
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a.live_stream_link:hover {
+  text-decoration: underline;
+  color: #0052a3;
+}
+
 .block_buttons a.button_link {
   width: 238px;
   height: 30px;
@@ -111,6 +145,14 @@ echo "<div class='index_background'>\n";
 if ($two_columns) {
   echo "<div class='index_column'>\n";
 }
+
+// *********** Pinewood Derby Live Stream Section ***************
+echo "<div class='live_stream_section'>\n";
+echo "  <img src='img/cub-scouts.png' alt='Cub Scouts Logo' class='live_stream_image'/>\n";
+echo "  <p class='live_stream_text'><b>Watch the 2026 Pinewood derby live here</b></p>\n";
+echo "  <a href='https://youtube.com/live/QhVWztXMY6I?feature=share' class='live_stream_link' target='_blank'>https://youtube.com/live/QhVWztXMY6I?feature=share</a>\n";
+echo "</div>\n";
+echo "<div class='index_spacer'>&nbsp;</div>\n";
 
 echo "<div class='block_buttons'>\n";
 
