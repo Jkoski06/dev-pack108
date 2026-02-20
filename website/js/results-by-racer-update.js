@@ -8,7 +8,7 @@ $(function() {
             success: function(data) {
               if (data["cease"]) {
                 clearInterval(intv);
-                window.location.href = '/dev/index.php';
+                window.location.href = '../index.php';
                 return;
               }
               process_newresults(data);

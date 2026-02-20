@@ -15,7 +15,7 @@ function poll_kiosk_all() {
           data: {query: 'poll.kiosk.all'},
           success: function(data) {
             if (data["cease"]) {
-              window.location.href = '/dev/index.php';
+              window.location.href = '../index.php';
               return;  // Without setting the next timeout
             }
             setTimeout(poll_kiosk_all, 2000);

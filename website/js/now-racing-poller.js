@@ -55,7 +55,7 @@ var Poller = {
               success: function(data) {
                 if (data["cease"]) {
                   Poller.ceased = true;
-                  window.location.href = '/dev/index.php';
+                  window.location.href = '../index.php';
                   return;
                 }
                 process_polling_result(data);

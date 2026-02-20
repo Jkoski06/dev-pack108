@@ -9,8 +9,7 @@ function make_banner($banner_title, $back_button = 'index.php') {
 
   if ($back_button && in_array($back_button, ['index.php', 'setup.php', 'checkin.php',
                                               'kiosk-dashboard.php', 'coordinator.php'])) {
-    $href = (strpos($back_button, '/dev/') === 0) ? $back_button : ('/dev/' . $back_button);
-    echo "<div class=\"back_button\" onclick=\"window.location='".$href."'; return false;\">\n";
+    echo "<div class=\"back_button\" onclick=\"window.location='".$back_button."'; return false;\">\n";
     echo "<img src=\"img/back-button.png\"/>\n";
     echo "</div>\n";
   }

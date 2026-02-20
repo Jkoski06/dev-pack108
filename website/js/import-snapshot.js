@@ -10,7 +10,7 @@ function onFormSubmit(e) {
     success: function(data) {
       var succ = data.documentElement.getElementsByTagName("success");
       if (succ && succ.length > 0) {
-          window.location = "/dev/setup.php";
+        window.location = "setup.php";
       }
    },
   });

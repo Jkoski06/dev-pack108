@@ -72,7 +72,7 @@ function on_tr_click(event) {
 function process_racer_list(data) {
   if (data.hasOwnProperty('cease')) {
     clearInterval(g_poll_interval);
-    window.location.href = '/dev/index.php';
+    window.location.href = '../index.php';
     return;
   }
   var table = $("div#subject-racers table");
@@ -139,7 +139,7 @@ function make_classes_and_ranks(data) {
 function process_award_list(data) {
   if (data.hasOwnProperty('cease')) {
     clearInterval(g_poll_interval);
-    window.location.href = '/dev/index.php';
+    window.location.href = '../index.php';
     return;
   }
   var awardtypes = make_award_types(data);
