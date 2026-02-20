@@ -1,4 +1,3 @@
-
 function handle_login(role, pwd) {
     $.ajax('action.php',
            {type: 'POST',
@@ -6,11 +5,10 @@ function handle_login(role, pwd) {
                    name: role,
                    password: pwd},
             success: function(data) {
-                            if (data.hasOwnProperty('outcome') &&
-                                    data.outcome.hasOwnProperty('summary') &&
-                                    data.outcome.summary === 'success') {
-                                // Use an explicit relative path to ensure we stay on this host/instance
-                                window.location.href = './index.php';
+              if (data.hasOwnProperty('outcome') &&
+                  data.outcome.hasOwnProperty('summary') &&
+                  data.outcome.summary === 'success') {
+			    window.location.href = 'index.php';
               } else if (data.hasOwnProperty('outcome') &&
                          data.outcome.hasOwnProperty('summary') &&
                          data.outcome.summary === 'failure') {
