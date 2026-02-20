@@ -21,7 +21,7 @@ var KioskPoller = (function(KioskPoller) {
               success: function(data) {
                 if (data["cease"]) {
                   clearInterval(interval);
-                  window.location.href = '../index.php';
+                  window.location.href = '/dev/index.php';
                   return;
                 }
                 var setting = data['kiosk-setting'];

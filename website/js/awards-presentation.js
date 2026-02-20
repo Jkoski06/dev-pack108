@@ -101,7 +101,7 @@ function initialize_award_controls() {
           success: function(data) {
             var award;
             if (data.hasOwnProperty('cease')) {
-              window.location.href = '../index.php';
+              window.location.href = '/dev/index.php';
               return;
             }
             if (!data.hasOwnProperty('current')) {

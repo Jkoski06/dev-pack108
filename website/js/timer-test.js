@@ -295,7 +295,7 @@ $(function() {
             success: function(data) {
               if (data["cease"]) {
                 clearInterval(poll_interval);
-                window.location.href = '../index.php';
+                window.location.href = '/dev/index.php';
                 return;
               }
               var tstate = data["timer-state"];

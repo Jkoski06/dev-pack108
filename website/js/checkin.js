@@ -12,7 +12,7 @@ function poll_max_carnumbers() {
           success: function (data) {
             if (data["cease"]) {
               clearInterval(g_poll_max_interval);
-              window.location.href = '../index.php';
+              window.location.href = '/dev/index.php';
               return;
             }
             if (data.hasOwnProperty('car-numbers')) {

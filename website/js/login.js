@@ -8,7 +8,7 @@ function handle_login(role, pwd) {
               if (data.hasOwnProperty('outcome') &&
                   data.outcome.hasOwnProperty('summary') &&
                   data.outcome.summary === 'success') {
-			    window.location.href = 'index.php';
+                window.location.href = '/dev/index.php';
               } else if (data.hasOwnProperty('outcome') &&
                          data.outcome.hasOwnProperty('summary') &&
                          data.outcome.summary === 'failure') {

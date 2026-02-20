@@ -180,7 +180,7 @@ function send_hello() {
                  message: 'HELLO'},
           success: function(data) {
             if (typeof data == "object" && data["cease"]) {
-              window.location.href = '../index.php';
+              window.location.href = '/dev/index.php';
               return;
             }
             process_timer_messages(data);
@@ -202,7 +202,7 @@ function send_identified() {
                 },
           success: function(data) {
             if (typeof data == "object" && data["cease"]) {
-              window.location.href = '../index.php';
+              window.location.href = '/dev/index.php';
               return;
             }
             process_timer_messages(data);
@@ -218,7 +218,7 @@ function send_heartbeat() {
                  confirmed: 1},
           success: function(data) {
             if (typeof data == "object" && data["cease"]) {
-              window.location.href = '../index.php';
+              window.location.href = '/dev/index.php';
               return;
             }
             process_timer_messages(data);
@@ -235,7 +235,7 @@ function send_started() {
                  confirmed: 1},
           success: function(data) {
             if (typeof data == "object" && data["cease"]) {
-              window.location.href = '../index.php';
+              window.location.href = '/dev/index.php';
               return;
             }
             process_timer_messages(data);
@@ -256,7 +256,7 @@ function send_finished() {
           data: data,
           success: function(data) {
             if (typeof data == "object" && data["cease"]) {
-              window.location.href = '../index.php';
+              window.location.href = '/dev/index.php';
               return;
             }
             show_not_racing();  // Will be immediately changed back, most likely.

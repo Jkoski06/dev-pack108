@@ -28,8 +28,8 @@ function make_the_fake_racers() {
                  check_in: $("#check_in_all").is(':checked') ? 1 : 0},
           success: function(data) {
              console.log('success');
-             // Jump to the check-in page
-             window.location.href = "checkin.php";
+         // Jump to the check-in page with /dev prefix to stay in dev container
+         window.location.href = "/dev/checkin.php";
           }
         });
   return false;

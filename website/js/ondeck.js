@@ -395,7 +395,7 @@ $(function() {
                   if (g_resized) {
                     if (json["cease"]) {
                       clearInterval(interval);
-                      window.location.href = '../index.php';
+                      window.location.href = '/dev/index.php';
                       return;
                     }
                     g_resized = false;

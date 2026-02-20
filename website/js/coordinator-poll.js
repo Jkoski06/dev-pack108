@@ -728,7 +728,7 @@ function coordinator_poll() {
               success: function(json) {
                 if (json["cease"]) {
                   clearInterval(g_polling_interval);
-                  window.location.href = '../index.php';
+                  window.location.href = '/dev/index.php';
                   return;
                 }
                 if (typeof(phantom_testing) == 'undefined' || !phantom_testing) {
