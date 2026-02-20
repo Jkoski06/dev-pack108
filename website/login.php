@@ -101,9 +101,9 @@ if (@$_SESSION['role']) {
 
 <div id='kiosk_modal' class="modal_dialog hidden block_buttons">
 
-<input type="button" value="Be a Kiosk" onclick="window.location='kiosk.php'"/>
-<input type="button" value="Fullscreen Kiosk" onclick="window.location='fullscreen.php'"/>
-<input type="button" value="Replay Kiosk" onclick="window.location='replay.php'"/>
+<input type="button" value="Be a Kiosk" onclick="window.location='./kiosk.php'"/>
+<input type="button" value="Fullscreen Kiosk" onclick="window.location='./fullscreen.php'"/>
+<input type="button" value="Replay Kiosk" onclick="window.location='./replay.php'"/>
 <br/>
 <input type="button" value="Cancel" onclick='close_modal("#kiosk_modal");'/>
 
